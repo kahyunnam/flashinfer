@@ -1,0 +1,3116 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.12, pytest-9.0.2, pluggy-1.6.0 -- /home/devuser/conda/envs/py312/bin/python
+cachedir: .pytest_cache
+rootdir: /workspaces/flashinfer
+configfile: pytest.ini
+collecting ... collected 6480 items / 6210 deselected / 270 selected
+
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2944-1024-8] SKIPPED [  0%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2944-1024-768] SKIPPED [  0%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [  1%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2048-1024-8] SKIPPED [  1%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2048-1024-768] SKIPPED [  1%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [  2%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-1024-1024-8] SKIPPED [  2%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-1024-1024-768] SKIPPED [  2%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-1024-1024-3072] SKIPPED [  3%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-768-1024-8] SKIPPED [  3%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-768-1024-768] SKIPPED [  4%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-768-1024-3072] SKIPPED [  4%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-512-1024-8] SKIPPED [  4%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-512-1024-768] SKIPPED [  5%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-512-1024-3072] SKIPPED [  5%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-384-1024-8] SKIPPED [  5%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-384-1024-768] SKIPPED [  6%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-384-1024-3072] SKIPPED [  6%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-2944-1024-8] SKIPPED [  7%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-2944-1024-768] SKIPPED [  7%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [  7%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-2048-1024-8] SKIPPED [  8%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-2048-1024-768] SKIPPED [  8%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [  8%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-8] SKIPPED [  9%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-768] SKIPPED [  9%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-3072] SKIPPED [ 10%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-768-1024-8] SKIPPED [ 10%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-768-1024-768] SKIPPED [ 10%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-768-1024-3072] SKIPPED [ 11%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-512-1024-8] SKIPPED [ 11%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-512-1024-768] SKIPPED [ 11%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-512-1024-3072] SKIPPED [ 12%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-384-1024-8] SKIPPED [ 12%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-384-1024-768] SKIPPED [ 12%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-kimi_k2-FP8_Block_MxFp8-384-1024-3072] SKIPPED [ 13%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-2944-1024-8] SKIPPED [ 13%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-2944-1024-768] SKIPPED [ 14%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [ 14%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-2048-1024-8] SKIPPED [ 14%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-2048-1024-768] SKIPPED [ 15%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [ 15%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-8] SKIPPED [ 15%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-768] SKIPPED [ 16%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-3072] SKIPPED [ 16%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-768-1024-8] SKIPPED [ 17%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-768-1024-768] SKIPPED [ 17%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-768-1024-3072] SKIPPED [ 17%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-512-1024-8] SKIPPED [ 18%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-512-1024-768] SKIPPED [ 18%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-512-1024-3072] SKIPPED [ 18%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-384-1024-8] SKIPPED [ 19%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-384-1024-768] SKIPPED [ 19%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSv3-FP8_Block_MxFp8-384-1024-3072] SKIPPED [ 20%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-2944-1024-8] SKIPPED [ 20%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-2944-1024-768] SKIPPED [ 20%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [ 21%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-2048-1024-8] SKIPPED [ 21%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-2048-1024-768] SKIPPED [ 21%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [ 22%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-1024-1024-8] SKIPPED [ 22%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-1024-1024-768] SKIPPED [ 22%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-1024-1024-3072] SKIPPED [ 23%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-768-1024-8] SKIPPED [ 23%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-768-1024-768] SKIPPED [ 24%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-768-1024-3072] SKIPPED [ 24%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-512-1024-8] SKIPPED [ 24%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-512-1024-768] SKIPPED [ 25%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-512-1024-3072] SKIPPED [ 25%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-384-1024-8] SKIPPED [ 25%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-384-1024-768] SKIPPED [ 26%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-DSLite-FP8_Block_MxFp8-384-1024-3072] SKIPPED [ 26%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-2944-1024-8] SKIPPED [ 27%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-2944-1024-768] SKIPPED [ 27%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [ 27%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-2048-1024-8] SKIPPED [ 28%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-2048-1024-768] SKIPPED [ 28%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [ 28%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-1024-1024-8] SKIPPED [ 29%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-1024-1024-768] SKIPPED [ 29%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-1024-1024-3072] SKIPPED [ 30%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-768-1024-8] SKIPPED [ 30%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-768-1024-768] SKIPPED [ 30%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-768-1024-3072] SKIPPED [ 31%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-512-1024-8] SKIPPED [ 31%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-512-1024-768] SKIPPED [ 31%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-512-1024-3072] SKIPPED [ 32%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-384-1024-8] SKIPPED [ 32%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-384-1024-768] SKIPPED [ 32%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-NoShuffle_MajorK-GLM4_MoE-FP8_Block_MxFp8-384-1024-3072] SKIPPED [ 33%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2944-1024-8] SKIPPED [ 33%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2944-1024-768] SKIPPED [ 34%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [ 34%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2048-1024-8] SKIPPED [ 34%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2048-1024-768] SKIPPED [ 35%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [ 35%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-1024-1024-8] SKIPPED [ 35%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-1024-1024-768] SKIPPED [ 36%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-1024-1024-3072] SKIPPED [ 36%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-768-1024-8] SKIPPED [ 37%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-768-1024-768] SKIPPED [ 37%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-768-1024-3072] SKIPPED [ 37%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-512-1024-8] SKIPPED [ 38%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-512-1024-768] SKIPPED [ 38%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-512-1024-3072] SKIPPED [ 38%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-384-1024-8] SKIPPED [ 39%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-384-1024-768] SKIPPED [ 39%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-nemotron_3_dummy-FP8_Block_MxFp8-384-1024-3072] SKIPPED [ 40%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-2944-1024-8] SKIPPED [ 40%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-2944-1024-768] SKIPPED [ 40%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [ 41%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-2048-1024-8] SKIPPED [ 41%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-2048-1024-768] SKIPPED [ 41%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [ 42%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-8] FAILED [ 42%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-768] FAILED [ 42%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-3072] FAILED [ 43%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-768-1024-8] SKIPPED [ 43%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-768-1024-768] SKIPPED [ 44%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-768-1024-3072] SKIPPED [ 44%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-512-1024-8] SKIPPED [ 44%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-512-1024-768] SKIPPED [ 45%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-512-1024-3072] SKIPPED [ 45%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-384-1024-8] SKIPPED [ 45%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-384-1024-768] SKIPPED [ 46%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-384-1024-3072] SKIPPED [ 46%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-2944-1024-8] SKIPPED [ 47%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-2944-1024-768] SKIPPED [ 47%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-2944-1024-3072] SKIPPED [ 47%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-2048-1024-8] SKIPPED [ 48%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-2048-1024-768] SKIPPED [ 48%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-2048-1024-3072] SKIPPED [ 48%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-8] FAILED [ 49%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-768] FAILED [ 49%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-3072] FAILED [ 50%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-768-1024-8] SKIPPED [ 50%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-768-1024-768] SKIPPED [ 50%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-768-1024-3072] SKIPPED [ 51%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-512-1024-8] FAILED [ 51%]
+tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-512-1024-768]
+
+=================================== FAILURES ===================================
+_ test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-8] _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+>           subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+
+flashinfer/jit/cpp_ext.py:328:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja'],)
+kwargs = {'cwd': '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', 'stderr': -2, 'stdout': -1, 'text': True}
+process = <Popen: returncode: 1 args: ['ninja', '-v', '-C', '/home/devuser/.cache/flas...>
+stdout = "ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'\n[1/2] /usr/...                                                                         ^\nninja: build stopped: subcommand failed.\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja']' returned non-zero exit status 1.
+
+/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py:571: CalledProcessError
+
+The above exception was the direct cause of the following exception:
+
+num_tokens = 8, hidden_size = 1024, intermediate_size = 1024
+moe_impl = <tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe object at 0x7e24d451af00>
+routing_config = {'compatible_activation_types': [<ActivationType.Swiglu: 3>, <ActivationType.Geglu: 4>], 'compatible_intermediate_size..._gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'enable_autotune': True, ...}
+weight_processing = {'compatible_moe_impls': [<class 'tests.moe.test_trtllm_gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fuse...sts.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'layout': <WeightLayout.MajorK: 0>, 'use_shuffled_weight': True}
+activation_type = 3, cache_permute_indices = {}
+
+    @pytest.mark.parametrize("num_tokens", [8, 768, 3072])
+    @pytest.mark.parametrize("hidden_size", [1024])
+    @pytest.mark.parametrize("intermediate_size", [2944, 2048, 1024, 768, 512, 384])
+    @pytest.mark.parametrize(
+        "moe_impl",
+        [
+            pytest.param(FP8PerTensorMoe(), id="FP8_PerTensor"),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_DEEPSEEK),
+                id="FP8_Block_DeepSeek",
+            ),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_MXFP8),
+                id="FP8_Block_MxFp8",
+            ),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_NVFP4_NVFP4), id="NvFP4xNvFP4"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_MXFP8), id="MxFP4xMxFP8"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_Bf16), id="MxFP4xBf16"),
+            pytest.param(MxInt4BlockScaleMoe(), id="MxInt4xBf16"),
+            pytest.param(BF16Moe(), id="Bf16xBf16"),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "routing_config",
+        [
+            pytest.param(
+                {
+                    "num_experts": 512,
+                    "top_k": 22,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP8PerTensorMoe, FP4Moe],
+                    "compatible_intermediate_size": [2944],
+                    "compatible_activation_types": [ActivationType.Relu2],
+                    "enable_autotune": True,
+                },
+                id="nemotron_3_dummy",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 384,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="kimi_k2",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 256,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 8,
+                    "top_k_groups": 4,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [
+                        FP4Moe,
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                    "compatible_intermediate_size": [512, 1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="DSv3",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 72,
+                    "top_k": 6,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [384, 768],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="DSLite",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 160,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe, BF16Moe],
+                    "compatible_intermediate_size": [512, 1024, 1536],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="GLM4_MoE",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "weight_processing",
+        [
+            pytest.param(
+                {
+                    "use_shuffled_weight": False,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP8BlockScaleMoe],
+                },
+                id="NoShuffle_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP4Moe, FP8PerTensorMoe, FP8BlockScaleMoe],
+                },
+                id="Shuffled_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.BlockMajorK,
+                    "compatible_moe_impls": [
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                },
+                id="Shuffled_BlockMajorK",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "activation_type",
+        [
+            pytest.param(ActivationType.Swiglu.value, id="Swiglu"),
+            pytest.param(ActivationType.Geglu.value, id="Geglu"),
+            pytest.param(ActivationType.Relu2.value, id="Relu2"),
+        ],
+    )
+    def test_deepseekv3_routing(
+        num_tokens,
+        hidden_size,
+        intermediate_size,
+        moe_impl,
+        routing_config,
+        weight_processing,
+        activation_type,
+        cache_permute_indices,
+    ):
+        """Test DeepSeekV3 routing configurations."""
+>       run_moe_test(
+            num_tokens,
+            hidden_size,
+            intermediate_size,
+            moe_impl,
+            routing_config,
+            weight_processing,
+            activation_type,
+            cache_permute_indices,
+        )
+
+tests/moe/test_trtllm_gen_fused_moe.py:3121:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests/moe/test_trtllm_gen_fused_moe.py:2744: in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+tests/moe/test_trtllm_gen_fused_moe.py:290: in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/moe/test_trtllm_gen_fused_moe.py:2555: in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+tests/moe/test_trtllm_gen_fused_moe.py:1132: in call_moe
+    output = trtllm_fp8_block_scale_moe(
+flashinfer/fused_moe/core.py:2470: in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/fused_moe/core.py:952: in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/jit/core.py:317: in build_and_load
+    self.build(verbose, need_lock=False)
+flashinfer/jit/core.py:303: in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+            subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as e:
+            msg = "Ninja build failed."
+            if e.output:
+                msg += " Ninja output:\n" + e.output
+>           raise RuntimeError(msg) from e
+E           RuntimeError: Ninja build failed. Ninja output:
+E           ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'
+E           [1/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           FAILED: [code=1] /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu: In function ‘int flashinfer::__tvm_ffi_trtllm_fp8_block_scale_moe(void*, const TVMFFIAny*, int32_t, TVMFFIAny*)’:
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu:2167:1233: error: default arguments are only permitted for function parameters [-fpermissive]
+E            2167 | TVM_FFI_DLL_EXPORT_TYPED_FUNC(trtllm_fp8_block_scale_moe, trtllm_fp8_block_scale_moe);
+E                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+E           ninja: build stopped: subcommand failed.
+
+flashinfer/jit/cpp_ext.py:340: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-02-23 14:19:22,375 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-02-23 14:19:26,542 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+_ test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-768] _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+>           subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+
+flashinfer/jit/cpp_ext.py:328:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja'],)
+kwargs = {'cwd': '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', 'stderr': -2, 'stdout': -1, 'text': True}
+process = <Popen: returncode: 1 args: ['ninja', '-v', '-C', '/home/devuser/.cache/flas...>
+stdout = "ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'\n[1/2] /usr/...                                                                         ^\nninja: build stopped: subcommand failed.\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja']' returned non-zero exit status 1.
+
+/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py:571: CalledProcessError
+
+The above exception was the direct cause of the following exception:
+
+num_tokens = 768, hidden_size = 1024, intermediate_size = 1024
+moe_impl = <tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe object at 0x7e24d451af00>
+routing_config = {'compatible_activation_types': [<ActivationType.Swiglu: 3>, <ActivationType.Geglu: 4>], 'compatible_intermediate_size..._gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'enable_autotune': True, ...}
+weight_processing = {'compatible_moe_impls': [<class 'tests.moe.test_trtllm_gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fuse...sts.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'layout': <WeightLayout.MajorK: 0>, 'use_shuffled_weight': True}
+activation_type = 3, cache_permute_indices = {}
+
+    @pytest.mark.parametrize("num_tokens", [8, 768, 3072])
+    @pytest.mark.parametrize("hidden_size", [1024])
+    @pytest.mark.parametrize("intermediate_size", [2944, 2048, 1024, 768, 512, 384])
+    @pytest.mark.parametrize(
+        "moe_impl",
+        [
+            pytest.param(FP8PerTensorMoe(), id="FP8_PerTensor"),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_DEEPSEEK),
+                id="FP8_Block_DeepSeek",
+            ),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_MXFP8),
+                id="FP8_Block_MxFp8",
+            ),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_NVFP4_NVFP4), id="NvFP4xNvFP4"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_MXFP8), id="MxFP4xMxFP8"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_Bf16), id="MxFP4xBf16"),
+            pytest.param(MxInt4BlockScaleMoe(), id="MxInt4xBf16"),
+            pytest.param(BF16Moe(), id="Bf16xBf16"),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "routing_config",
+        [
+            pytest.param(
+                {
+                    "num_experts": 512,
+                    "top_k": 22,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP8PerTensorMoe, FP4Moe],
+                    "compatible_intermediate_size": [2944],
+                    "compatible_activation_types": [ActivationType.Relu2],
+                    "enable_autotune": True,
+                },
+                id="nemotron_3_dummy",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 384,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="kimi_k2",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 256,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 8,
+                    "top_k_groups": 4,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [
+                        FP4Moe,
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                    "compatible_intermediate_size": [512, 1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="DSv3",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 72,
+                    "top_k": 6,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [384, 768],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="DSLite",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 160,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe, BF16Moe],
+                    "compatible_intermediate_size": [512, 1024, 1536],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="GLM4_MoE",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "weight_processing",
+        [
+            pytest.param(
+                {
+                    "use_shuffled_weight": False,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP8BlockScaleMoe],
+                },
+                id="NoShuffle_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP4Moe, FP8PerTensorMoe, FP8BlockScaleMoe],
+                },
+                id="Shuffled_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.BlockMajorK,
+                    "compatible_moe_impls": [
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                },
+                id="Shuffled_BlockMajorK",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "activation_type",
+        [
+            pytest.param(ActivationType.Swiglu.value, id="Swiglu"),
+            pytest.param(ActivationType.Geglu.value, id="Geglu"),
+            pytest.param(ActivationType.Relu2.value, id="Relu2"),
+        ],
+    )
+    def test_deepseekv3_routing(
+        num_tokens,
+        hidden_size,
+        intermediate_size,
+        moe_impl,
+        routing_config,
+        weight_processing,
+        activation_type,
+        cache_permute_indices,
+    ):
+        """Test DeepSeekV3 routing configurations."""
+>       run_moe_test(
+            num_tokens,
+            hidden_size,
+            intermediate_size,
+            moe_impl,
+            routing_config,
+            weight_processing,
+            activation_type,
+            cache_permute_indices,
+        )
+
+tests/moe/test_trtllm_gen_fused_moe.py:3121:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests/moe/test_trtllm_gen_fused_moe.py:2744: in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+tests/moe/test_trtllm_gen_fused_moe.py:290: in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/moe/test_trtllm_gen_fused_moe.py:2555: in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+tests/moe/test_trtllm_gen_fused_moe.py:1132: in call_moe
+    output = trtllm_fp8_block_scale_moe(
+flashinfer/fused_moe/core.py:2470: in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/fused_moe/core.py:952: in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/jit/core.py:317: in build_and_load
+    self.build(verbose, need_lock=False)
+flashinfer/jit/core.py:303: in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+            subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as e:
+            msg = "Ninja build failed."
+            if e.output:
+                msg += " Ninja output:\n" + e.output
+>           raise RuntimeError(msg) from e
+E           RuntimeError: Ninja build failed. Ninja output:
+E           ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'
+E           [1/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           FAILED: [code=1] /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu: In function ‘int flashinfer::__tvm_ffi_trtllm_fp8_block_scale_moe(void*, const TVMFFIAny*, int32_t, TVMFFIAny*)’:
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu:2167:1233: error: default arguments are only permitted for function parameters [-fpermissive]
+E            2167 | TVM_FFI_DLL_EXPORT_TYPED_FUNC(trtllm_fp8_block_scale_moe, trtllm_fp8_block_scale_moe);
+E                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+E           ninja: build stopped: subcommand failed.
+
+flashinfer/jit/cpp_ext.py:340: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-02-23 14:19:34,103 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-02-23 14:19:38,336 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+_ test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-3072] _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+>           subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+
+flashinfer/jit/cpp_ext.py:328:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja'],)
+kwargs = {'cwd': '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', 'stderr': -2, 'stdout': -1, 'text': True}
+process = <Popen: returncode: 1 args: ['ninja', '-v', '-C', '/home/devuser/.cache/flas...>
+stdout = "ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'\n[1/2] /usr/...                                                                         ^\nninja: build stopped: subcommand failed.\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja']' returned non-zero exit status 1.
+
+/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py:571: CalledProcessError
+
+The above exception was the direct cause of the following exception:
+
+num_tokens = 3072, hidden_size = 1024, intermediate_size = 1024
+moe_impl = <tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe object at 0x7e24d451af00>
+routing_config = {'compatible_activation_types': [<ActivationType.Swiglu: 3>, <ActivationType.Geglu: 4>], 'compatible_intermediate_size..._gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'enable_autotune': True, ...}
+weight_processing = {'compatible_moe_impls': [<class 'tests.moe.test_trtllm_gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fuse...sts.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'layout': <WeightLayout.MajorK: 0>, 'use_shuffled_weight': True}
+activation_type = 3, cache_permute_indices = {}
+
+    @pytest.mark.parametrize("num_tokens", [8, 768, 3072])
+    @pytest.mark.parametrize("hidden_size", [1024])
+    @pytest.mark.parametrize("intermediate_size", [2944, 2048, 1024, 768, 512, 384])
+    @pytest.mark.parametrize(
+        "moe_impl",
+        [
+            pytest.param(FP8PerTensorMoe(), id="FP8_PerTensor"),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_DEEPSEEK),
+                id="FP8_Block_DeepSeek",
+            ),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_MXFP8),
+                id="FP8_Block_MxFp8",
+            ),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_NVFP4_NVFP4), id="NvFP4xNvFP4"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_MXFP8), id="MxFP4xMxFP8"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_Bf16), id="MxFP4xBf16"),
+            pytest.param(MxInt4BlockScaleMoe(), id="MxInt4xBf16"),
+            pytest.param(BF16Moe(), id="Bf16xBf16"),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "routing_config",
+        [
+            pytest.param(
+                {
+                    "num_experts": 512,
+                    "top_k": 22,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP8PerTensorMoe, FP4Moe],
+                    "compatible_intermediate_size": [2944],
+                    "compatible_activation_types": [ActivationType.Relu2],
+                    "enable_autotune": True,
+                },
+                id="nemotron_3_dummy",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 384,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="kimi_k2",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 256,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 8,
+                    "top_k_groups": 4,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [
+                        FP4Moe,
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                    "compatible_intermediate_size": [512, 1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="DSv3",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 72,
+                    "top_k": 6,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [384, 768],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="DSLite",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 160,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe, BF16Moe],
+                    "compatible_intermediate_size": [512, 1024, 1536],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="GLM4_MoE",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "weight_processing",
+        [
+            pytest.param(
+                {
+                    "use_shuffled_weight": False,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP8BlockScaleMoe],
+                },
+                id="NoShuffle_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP4Moe, FP8PerTensorMoe, FP8BlockScaleMoe],
+                },
+                id="Shuffled_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.BlockMajorK,
+                    "compatible_moe_impls": [
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                },
+                id="Shuffled_BlockMajorK",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "activation_type",
+        [
+            pytest.param(ActivationType.Swiglu.value, id="Swiglu"),
+            pytest.param(ActivationType.Geglu.value, id="Geglu"),
+            pytest.param(ActivationType.Relu2.value, id="Relu2"),
+        ],
+    )
+    def test_deepseekv3_routing(
+        num_tokens,
+        hidden_size,
+        intermediate_size,
+        moe_impl,
+        routing_config,
+        weight_processing,
+        activation_type,
+        cache_permute_indices,
+    ):
+        """Test DeepSeekV3 routing configurations."""
+>       run_moe_test(
+            num_tokens,
+            hidden_size,
+            intermediate_size,
+            moe_impl,
+            routing_config,
+            weight_processing,
+            activation_type,
+            cache_permute_indices,
+        )
+
+tests/moe/test_trtllm_gen_fused_moe.py:3121:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests/moe/test_trtllm_gen_fused_moe.py:2744: in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+tests/moe/test_trtllm_gen_fused_moe.py:290: in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/moe/test_trtllm_gen_fused_moe.py:2555: in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+tests/moe/test_trtllm_gen_fused_moe.py:1132: in call_moe
+    output = trtllm_fp8_block_scale_moe(
+flashinfer/fused_moe/core.py:2470: in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/fused_moe/core.py:952: in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/jit/core.py:317: in build_and_load
+    self.build(verbose, need_lock=False)
+flashinfer/jit/core.py:303: in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+            subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as e:
+            msg = "Ninja build failed."
+            if e.output:
+                msg += " Ninja output:\n" + e.output
+>           raise RuntimeError(msg) from e
+E           RuntimeError: Ninja build failed. Ninja output:
+E           ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'
+E           [1/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           FAILED: [code=1] /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu: In function ‘int flashinfer::__tvm_ffi_trtllm_fp8_block_scale_moe(void*, const TVMFFIAny*, int32_t, TVMFFIAny*)’:
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu:2167:1233: error: default arguments are only permitted for function parameters [-fpermissive]
+E            2167 | TVM_FFI_DLL_EXPORT_TYPED_FUNC(trtllm_fp8_block_scale_moe, trtllm_fp8_block_scale_moe);
+E                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+E           ninja: build stopped: subcommand failed.
+
+flashinfer/jit/cpp_ext.py:340: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-02-23 14:19:46,523 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-02-23 14:19:50,653 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+_ test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-8] _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+>           subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+
+flashinfer/jit/cpp_ext.py:328:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja'],)
+kwargs = {'cwd': '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', 'stderr': -2, 'stdout': -1, 'text': True}
+process = <Popen: returncode: 1 args: ['ninja', '-v', '-C', '/home/devuser/.cache/flas...>
+stdout = "ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'\n[1/2] /usr/...                                                                         ^\nninja: build stopped: subcommand failed.\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja']' returned non-zero exit status 1.
+
+/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py:571: CalledProcessError
+
+The above exception was the direct cause of the following exception:
+
+num_tokens = 8, hidden_size = 1024, intermediate_size = 1024
+moe_impl = <tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe object at 0x7e24d451af00>
+routing_config = {'compatible_activation_types': [<ActivationType.Swiglu: 3>, <ActivationType.Geglu: 4>], 'compatible_intermediate_size..._fused_moe.MxInt4BlockScaleMoe'>, <class 'tests.moe.test_trtllm_gen_fused_moe.BF16Moe'>], 'enable_autotune': True, ...}
+weight_processing = {'compatible_moe_impls': [<class 'tests.moe.test_trtllm_gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fuse...sts.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'layout': <WeightLayout.MajorK: 0>, 'use_shuffled_weight': True}
+activation_type = 3, cache_permute_indices = {}
+
+    @pytest.mark.parametrize("num_tokens", [8, 768, 3072])
+    @pytest.mark.parametrize("hidden_size", [1024])
+    @pytest.mark.parametrize("intermediate_size", [2944, 2048, 1024, 768, 512, 384])
+    @pytest.mark.parametrize(
+        "moe_impl",
+        [
+            pytest.param(FP8PerTensorMoe(), id="FP8_PerTensor"),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_DEEPSEEK),
+                id="FP8_Block_DeepSeek",
+            ),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_MXFP8),
+                id="FP8_Block_MxFp8",
+            ),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_NVFP4_NVFP4), id="NvFP4xNvFP4"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_MXFP8), id="MxFP4xMxFP8"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_Bf16), id="MxFP4xBf16"),
+            pytest.param(MxInt4BlockScaleMoe(), id="MxInt4xBf16"),
+            pytest.param(BF16Moe(), id="Bf16xBf16"),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "routing_config",
+        [
+            pytest.param(
+                {
+                    "num_experts": 512,
+                    "top_k": 22,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP8PerTensorMoe, FP4Moe],
+                    "compatible_intermediate_size": [2944],
+                    "compatible_activation_types": [ActivationType.Relu2],
+                    "enable_autotune": True,
+                },
+                id="nemotron_3_dummy",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 384,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="kimi_k2",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 256,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 8,
+                    "top_k_groups": 4,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [
+                        FP4Moe,
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                    "compatible_intermediate_size": [512, 1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="DSv3",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 72,
+                    "top_k": 6,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [384, 768],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="DSLite",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 160,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe, BF16Moe],
+                    "compatible_intermediate_size": [512, 1024, 1536],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="GLM4_MoE",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "weight_processing",
+        [
+            pytest.param(
+                {
+                    "use_shuffled_weight": False,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP8BlockScaleMoe],
+                },
+                id="NoShuffle_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP4Moe, FP8PerTensorMoe, FP8BlockScaleMoe],
+                },
+                id="Shuffled_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.BlockMajorK,
+                    "compatible_moe_impls": [
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                },
+                id="Shuffled_BlockMajorK",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "activation_type",
+        [
+            pytest.param(ActivationType.Swiglu.value, id="Swiglu"),
+            pytest.param(ActivationType.Geglu.value, id="Geglu"),
+            pytest.param(ActivationType.Relu2.value, id="Relu2"),
+        ],
+    )
+    def test_deepseekv3_routing(
+        num_tokens,
+        hidden_size,
+        intermediate_size,
+        moe_impl,
+        routing_config,
+        weight_processing,
+        activation_type,
+        cache_permute_indices,
+    ):
+        """Test DeepSeekV3 routing configurations."""
+>       run_moe_test(
+            num_tokens,
+            hidden_size,
+            intermediate_size,
+            moe_impl,
+            routing_config,
+            weight_processing,
+            activation_type,
+            cache_permute_indices,
+        )
+
+tests/moe/test_trtllm_gen_fused_moe.py:3121:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests/moe/test_trtllm_gen_fused_moe.py:2744: in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+tests/moe/test_trtllm_gen_fused_moe.py:290: in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/moe/test_trtllm_gen_fused_moe.py:2555: in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+tests/moe/test_trtllm_gen_fused_moe.py:1132: in call_moe
+    output = trtllm_fp8_block_scale_moe(
+flashinfer/fused_moe/core.py:2470: in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/fused_moe/core.py:952: in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/jit/core.py:317: in build_and_load
+    self.build(verbose, need_lock=False)
+flashinfer/jit/core.py:303: in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+            subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as e:
+            msg = "Ninja build failed."
+            if e.output:
+                msg += " Ninja output:\n" + e.output
+>           raise RuntimeError(msg) from e
+E           RuntimeError: Ninja build failed. Ninja output:
+E           ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'
+E           [1/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           FAILED: [code=1] /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu: In function ‘int flashinfer::__tvm_ffi_trtllm_fp8_block_scale_moe(void*, const TVMFFIAny*, int32_t, TVMFFIAny*)’:
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu:2167:1233: error: default arguments are only permitted for function parameters [-fpermissive]
+E            2167 | TVM_FFI_DLL_EXPORT_TYPED_FUNC(trtllm_fp8_block_scale_moe, trtllm_fp8_block_scale_moe);
+E                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+E           ninja: build stopped: subcommand failed.
+
+flashinfer/jit/cpp_ext.py:340: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-02-23 14:19:55,523 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-02-23 14:19:59,678 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+_ test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-768] _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+>           subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+
+flashinfer/jit/cpp_ext.py:328:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja'],)
+kwargs = {'cwd': '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', 'stderr': -2, 'stdout': -1, 'text': True}
+process = <Popen: returncode: 1 args: ['ninja', '-v', '-C', '/home/devuser/.cache/flas...>
+stdout = "ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'\n[1/2] /usr/...                                                                         ^\nninja: build stopped: subcommand failed.\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja']' returned non-zero exit status 1.
+
+/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py:571: CalledProcessError
+
+The above exception was the direct cause of the following exception:
+
+num_tokens = 768, hidden_size = 1024, intermediate_size = 1024
+moe_impl = <tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe object at 0x7e24d451af00>
+routing_config = {'compatible_activation_types': [<ActivationType.Swiglu: 3>, <ActivationType.Geglu: 4>], 'compatible_intermediate_size..._fused_moe.MxInt4BlockScaleMoe'>, <class 'tests.moe.test_trtllm_gen_fused_moe.BF16Moe'>], 'enable_autotune': True, ...}
+weight_processing = {'compatible_moe_impls': [<class 'tests.moe.test_trtllm_gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fuse...sts.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'layout': <WeightLayout.MajorK: 0>, 'use_shuffled_weight': True}
+activation_type = 3, cache_permute_indices = {}
+
+    @pytest.mark.parametrize("num_tokens", [8, 768, 3072])
+    @pytest.mark.parametrize("hidden_size", [1024])
+    @pytest.mark.parametrize("intermediate_size", [2944, 2048, 1024, 768, 512, 384])
+    @pytest.mark.parametrize(
+        "moe_impl",
+        [
+            pytest.param(FP8PerTensorMoe(), id="FP8_PerTensor"),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_DEEPSEEK),
+                id="FP8_Block_DeepSeek",
+            ),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_MXFP8),
+                id="FP8_Block_MxFp8",
+            ),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_NVFP4_NVFP4), id="NvFP4xNvFP4"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_MXFP8), id="MxFP4xMxFP8"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_Bf16), id="MxFP4xBf16"),
+            pytest.param(MxInt4BlockScaleMoe(), id="MxInt4xBf16"),
+            pytest.param(BF16Moe(), id="Bf16xBf16"),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "routing_config",
+        [
+            pytest.param(
+                {
+                    "num_experts": 512,
+                    "top_k": 22,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP8PerTensorMoe, FP4Moe],
+                    "compatible_intermediate_size": [2944],
+                    "compatible_activation_types": [ActivationType.Relu2],
+                    "enable_autotune": True,
+                },
+                id="nemotron_3_dummy",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 384,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="kimi_k2",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 256,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 8,
+                    "top_k_groups": 4,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [
+                        FP4Moe,
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                    "compatible_intermediate_size": [512, 1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="DSv3",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 72,
+                    "top_k": 6,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [384, 768],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="DSLite",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 160,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe, BF16Moe],
+                    "compatible_intermediate_size": [512, 1024, 1536],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="GLM4_MoE",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "weight_processing",
+        [
+            pytest.param(
+                {
+                    "use_shuffled_weight": False,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP8BlockScaleMoe],
+                },
+                id="NoShuffle_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP4Moe, FP8PerTensorMoe, FP8BlockScaleMoe],
+                },
+                id="Shuffled_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.BlockMajorK,
+                    "compatible_moe_impls": [
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                },
+                id="Shuffled_BlockMajorK",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "activation_type",
+        [
+            pytest.param(ActivationType.Swiglu.value, id="Swiglu"),
+            pytest.param(ActivationType.Geglu.value, id="Geglu"),
+            pytest.param(ActivationType.Relu2.value, id="Relu2"),
+        ],
+    )
+    def test_deepseekv3_routing(
+        num_tokens,
+        hidden_size,
+        intermediate_size,
+        moe_impl,
+        routing_config,
+        weight_processing,
+        activation_type,
+        cache_permute_indices,
+    ):
+        """Test DeepSeekV3 routing configurations."""
+>       run_moe_test(
+            num_tokens,
+            hidden_size,
+            intermediate_size,
+            moe_impl,
+            routing_config,
+            weight_processing,
+            activation_type,
+            cache_permute_indices,
+        )
+
+tests/moe/test_trtllm_gen_fused_moe.py:3121:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests/moe/test_trtllm_gen_fused_moe.py:2744: in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+tests/moe/test_trtllm_gen_fused_moe.py:290: in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/moe/test_trtllm_gen_fused_moe.py:2555: in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+tests/moe/test_trtllm_gen_fused_moe.py:1132: in call_moe
+    output = trtllm_fp8_block_scale_moe(
+flashinfer/fused_moe/core.py:2470: in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/fused_moe/core.py:952: in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/jit/core.py:317: in build_and_load
+    self.build(verbose, need_lock=False)
+flashinfer/jit/core.py:303: in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+            subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as e:
+            msg = "Ninja build failed."
+            if e.output:
+                msg += " Ninja output:\n" + e.output
+>           raise RuntimeError(msg) from e
+E           RuntimeError: Ninja build failed. Ninja output:
+E           ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'
+E           [1/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           FAILED: [code=1] /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu: In function ‘int flashinfer::__tvm_ffi_trtllm_fp8_block_scale_moe(void*, const TVMFFIAny*, int32_t, TVMFFIAny*)’:
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu:2167:1233: error: default arguments are only permitted for function parameters [-fpermissive]
+E            2167 | TVM_FFI_DLL_EXPORT_TYPED_FUNC(trtllm_fp8_block_scale_moe, trtllm_fp8_block_scale_moe);
+E                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+E           ninja: build stopped: subcommand failed.
+
+flashinfer/jit/cpp_ext.py:340: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-02-23 14:20:04,742 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-02-23 14:20:08,904 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+_ test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-3072] _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+>           subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+
+flashinfer/jit/cpp_ext.py:328:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja'],)
+kwargs = {'cwd': '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', 'stderr': -2, 'stdout': -1, 'text': True}
+process = <Popen: returncode: 1 args: ['ninja', '-v', '-C', '/home/devuser/.cache/flas...>
+stdout = "ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'\n[1/2] /usr/...                                                                         ^\nninja: build stopped: subcommand failed.\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja']' returned non-zero exit status 1.
+
+/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py:571: CalledProcessError
+
+The above exception was the direct cause of the following exception:
+
+num_tokens = 3072, hidden_size = 1024, intermediate_size = 1024
+moe_impl = <tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe object at 0x7e24d451af00>
+routing_config = {'compatible_activation_types': [<ActivationType.Swiglu: 3>, <ActivationType.Geglu: 4>], 'compatible_intermediate_size..._fused_moe.MxInt4BlockScaleMoe'>, <class 'tests.moe.test_trtllm_gen_fused_moe.BF16Moe'>], 'enable_autotune': True, ...}
+weight_processing = {'compatible_moe_impls': [<class 'tests.moe.test_trtllm_gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fuse...sts.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'layout': <WeightLayout.MajorK: 0>, 'use_shuffled_weight': True}
+activation_type = 3, cache_permute_indices = {}
+
+    @pytest.mark.parametrize("num_tokens", [8, 768, 3072])
+    @pytest.mark.parametrize("hidden_size", [1024])
+    @pytest.mark.parametrize("intermediate_size", [2944, 2048, 1024, 768, 512, 384])
+    @pytest.mark.parametrize(
+        "moe_impl",
+        [
+            pytest.param(FP8PerTensorMoe(), id="FP8_PerTensor"),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_DEEPSEEK),
+                id="FP8_Block_DeepSeek",
+            ),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_MXFP8),
+                id="FP8_Block_MxFp8",
+            ),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_NVFP4_NVFP4), id="NvFP4xNvFP4"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_MXFP8), id="MxFP4xMxFP8"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_Bf16), id="MxFP4xBf16"),
+            pytest.param(MxInt4BlockScaleMoe(), id="MxInt4xBf16"),
+            pytest.param(BF16Moe(), id="Bf16xBf16"),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "routing_config",
+        [
+            pytest.param(
+                {
+                    "num_experts": 512,
+                    "top_k": 22,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP8PerTensorMoe, FP4Moe],
+                    "compatible_intermediate_size": [2944],
+                    "compatible_activation_types": [ActivationType.Relu2],
+                    "enable_autotune": True,
+                },
+                id="nemotron_3_dummy",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 384,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="kimi_k2",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 256,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 8,
+                    "top_k_groups": 4,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [
+                        FP4Moe,
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                    "compatible_intermediate_size": [512, 1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="DSv3",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 72,
+                    "top_k": 6,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [384, 768],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="DSLite",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 160,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe, BF16Moe],
+                    "compatible_intermediate_size": [512, 1024, 1536],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="GLM4_MoE",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "weight_processing",
+        [
+            pytest.param(
+                {
+                    "use_shuffled_weight": False,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP8BlockScaleMoe],
+                },
+                id="NoShuffle_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP4Moe, FP8PerTensorMoe, FP8BlockScaleMoe],
+                },
+                id="Shuffled_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.BlockMajorK,
+                    "compatible_moe_impls": [
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                },
+                id="Shuffled_BlockMajorK",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "activation_type",
+        [
+            pytest.param(ActivationType.Swiglu.value, id="Swiglu"),
+            pytest.param(ActivationType.Geglu.value, id="Geglu"),
+            pytest.param(ActivationType.Relu2.value, id="Relu2"),
+        ],
+    )
+    def test_deepseekv3_routing(
+        num_tokens,
+        hidden_size,
+        intermediate_size,
+        moe_impl,
+        routing_config,
+        weight_processing,
+        activation_type,
+        cache_permute_indices,
+    ):
+        """Test DeepSeekV3 routing configurations."""
+>       run_moe_test(
+            num_tokens,
+            hidden_size,
+            intermediate_size,
+            moe_impl,
+            routing_config,
+            weight_processing,
+            activation_type,
+            cache_permute_indices,
+        )
+
+tests/moe/test_trtllm_gen_fused_moe.py:3121:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests/moe/test_trtllm_gen_fused_moe.py:2744: in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+tests/moe/test_trtllm_gen_fused_moe.py:290: in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/moe/test_trtllm_gen_fused_moe.py:2555: in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+tests/moe/test_trtllm_gen_fused_moe.py:1132: in call_moe
+    output = trtllm_fp8_block_scale_moe(
+flashinfer/fused_moe/core.py:2470: in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/fused_moe/core.py:952: in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/jit/core.pyTraceback (most recent call last):
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/main.py", line 318, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+                         ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/main.py", line 372, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/logging.py", line 801, in pytest_runtestloop
+    return (yield)  # Run all the tests.
+            ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/terminal.py", line 707, in pytest_runtestloop
+    result = yield
+             ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/main.py", line 396, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/warnings.py", line 89, in pytest_runtest_protocol
+    return (yield)
+            ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/assertion/__init__.py", line 192, in pytest_runtest_protocol
+    return (yield)
+            ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/unittest.py", line 587, in pytest_runtest_protocol
+    return (yield)
+            ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/faulthandler.py", line 102, in pytest_runtest_protocol
+    return (yield)
+            ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/runner.py", line 118, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/runner.py", line 137, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/runner.py", line 244, in call_and_report
+    call = CallInfo.from_call(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/runner.py", line 353, in from_call
+    result: TResult | None = func()
+                             ^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/runner.py", line 245, in <lambda>
+    lambda: runtest_hook(item=item, **kwds),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/logging.py", line 850, in pytest_runtest_call
+    yield
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/workspaces/flashinfer/tests/conftest.py", line 144, in pytest_runtest_call
+    yield
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/capture.py", line 900, in pytest_runtest_call
+    return (yield)
+            ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 139, in _multicall
+    teardown.throw(exception)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/skipping.py", line 268, in pytest_runtest_call
+    return (yield)
+            ^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/runner.py", line 179, in pytest_runtest_call
+    item.runtest()
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/python.py", line 1720, in runtest
+    self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/python.py", line 166, in pytest_pyfunc_call
+    result = testfunction(**testargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/flashinfer/tests/moe/test_trtllm_gen_fused_moe.py", line 3121, in test_deepseekv3_routing
+    run_moe_test(
+  File "/workspaces/flashinfer/tests/moe/test_trtllm_gen_fused_moe.py", line 2744, in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/flashinfer/tests/moe/test_trtllm_gen_fused_moe.py", line 290, in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/flashinfer/tests/moe/test_trtllm_gen_fused_moe.py", line 2555, in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/flashinfer/tests/moe/test_trtllm_gen_fused_moe.py", line 1132, in call_moe
+    output = trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/flashinfer/flashinfer/fused_moe/core.py", line 2470, in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/flashinfer/flashinfer/fused_moe/core.py", line 952, in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/flashinfer/flashinfer/jit/core.py", line 317, in build_and_load
+    self.build(verbose, need_lock=False)
+  File "/workspaces/flashinfer/flashinfer/jit/core.py", line 303, in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+  File "/workspaces/flashinfer/flashinfer/jit/cpp_ext.py", line 328, in run_ninja
+    subprocess.run(
+  File "/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py", line 1196, in communicate
+    stdout = self.stdout.read()
+             ^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pytest/__main__.py", line 9, in <module>
+    raise SystemExit(pytest.console_main())
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/config/__init__.py", line 223, in console_main
+    code = main()
+           ^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/config/__init__.py", line 199, in main
+    ret: ExitCode | int = config.hook.pytest_cmdline_main(config=config)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/main.py", line 365, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/main.py", line 332, in wrap_session
+    config.hook.pytest_keyboard_interrupt(excinfo=excinfo)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_hooks.py", line 512, in __call__
+    return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_manager.py", line 120, in _hookexec
+    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 167, in _multicall
+    raise exception
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/pluggy/_callers.py", line 121, in _multicall
+    res = hook_impl.function(*args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/terminal.py", line 999, in pytest_keyboard_interrupt
+    self._keyboardinterrupt_memo = excinfo.getrepr(funcargs=True)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_code/code.py", line 765, in getrepr
+    return fmt.repr_excinfo(self)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_code/code.py", line 1200, in repr_excinfo
+    reprtraceback = self.repr_traceback(excinfo_)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_code/code.py", line 1133, in repr_traceback
+    self.repr_traceback_entry(entry, excinfo if last == entry else None)
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_code/code.py", line 1074, in repr_traceback_entry
+    reprargs = self.repr_args(entry) if not short else None
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_code/code.py", line 911, in repr_args
+    str_repr = saferepr(argvalue)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_io/saferepr.py", line 111, in saferepr
+    return SafeRepr(maxsize, use_ascii).repr(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_io/saferepr.py", line 62, in repr
+    s = super().repr(x)
+        ^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/reprlib.py", line 70, in repr
+    return self.repr1(x, self.maxlevel)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/reprlib.py", line 88, in repr1
+    return method(x, level)
+           ^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/reprlib.py", line 166, in repr_dict
+    valrepr = repr1(x[key], newlevel)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/reprlib.py", line 90, in repr1
+    return self.repr_instance(x, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/_pytest/_io/saferepr.py", line 73, in repr_instance
+    s = repr(x)
+        ^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor.py", line 573, in __repr__
+    return torch._tensor_str._str(self, tensor_contents=tensor_contents)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 724, in _str
+    return _str_intern(self, tensor_contents=tensor_contents)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 643, in _str_intern
+    tensor_str = _tensor_str(self, indent)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 376, in _tensor_str
+    return _tensor_str_with_formatter(self, indent, summarize, formatter)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 307, in _tensor_str_with_formatter
+    _tensor_str_with_formatter(
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 314, in _tensor_str_with_formatter
+    _tensor_str_with_formatter(
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 302, in _tensor_str_with_formatter
+    return _vector_str(self, indent, summarize, formatter1, formatter2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 278, in _vector_str
+    [_val_formatter(val) for val in self[: PRINT_OPTS.edgeitems].tolist()]
+     ^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 263, in _val_formatter
+    return formatter1.format(val)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/devuser/conda/envs/py312/lib/python3.12/site-packages/torch/_tensor_str.py", line 217, in format
+    ret = f"{{:{self.max_width}.{PRINT_OPTS.precision}e}}".format(value)
+               ^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+:317: in build_and_load
+    self.build(verbose, need_lock=False)
+flashinfer/jit/core.py:303: in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+            subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as e:
+            msg = "Ninja build failed."
+            if e.output:
+                msg += " Ninja output:\n" + e.output
+>           raise RuntimeError(msg) from e
+E           RuntimeError: Ninja build failed. Ninja output:
+E           ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'
+E           [1/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           FAILED: [code=1] /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu: In function ‘int flashinfer::__tvm_ffi_trtllm_fp8_block_scale_moe(void*, const TVMFFIAny*, int32_t, TVMFFIAny*)’:
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu:2167:1233: error: default arguments are only permitted for function parameters [-fpermissive]
+E            2167 | TVM_FFI_DLL_EXPORT_TYPED_FUNC(trtllm_fp8_block_scale_moe, trtllm_fp8_block_scale_moe);
+E                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+E           ninja: build stopped: subcommand failed.
+
+flashinfer/jit/cpp_ext.py:340: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-02-23 14:20:14,760 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-02-23 14:20:18,985 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+_ test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-512-1024-8] _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+>           subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+
+flashinfer/jit/cpp_ext.py:328:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+input = None, capture_output = False, timeout = None, check = True
+popenargs = (['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja'],)
+kwargs = {'cwd': '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', 'stderr': -2, 'stdout': -1, 'text': True}
+process = <Popen: returncode: 1 args: ['ninja', '-v', '-C', '/home/devuser/.cache/flas...>
+stdout = "ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'\n[1/2] /usr/...                                                                         ^\nninja: build stopped: subcommand failed.\n"
+stderr = None, retcode = 1
+
+    def run(*popenargs,
+            input=None, capture_output=False, timeout=None, check=False, **kwargs):
+        """Run command with arguments and return a CompletedProcess instance.
+
+        The returned instance will have attributes args, returncode, stdout and
+        stderr. By default, stdout and stderr are not captured, and those attributes
+        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,
+        or pass capture_output=True to capture both.
+
+        If check is True and the exit code was non-zero, it raises a
+        CalledProcessError. The CalledProcessError object will have the return code
+        in the returncode attribute, and output & stderr attributes if those streams
+        were captured.
+
+        If timeout (seconds) is given and the process takes too long,
+         a TimeoutExpired exception will be raised.
+
+        There is an optional argument "input", allowing you to
+        pass bytes or a string to the subprocess's stdin.  If you use this argument
+        you may not also use the Popen constructor's "stdin" argument, as
+        it will be used internally.
+
+        By default, all communication is in bytes, and therefore any "input" should
+        be bytes, and the stdout and stderr will be bytes. If in text mode, any
+        "input" should be a string, and stdout and stderr will be strings decoded
+        according to locale encoding, or by "encoding" if set. Text mode is
+        triggered by setting any of text, encoding, errors or universal_newlines.
+
+        The other arguments are the same as for the Popen constructor.
+        """
+        if input is not None:
+            if kwargs.get('stdin') is not None:
+                raise ValueError('stdin and input arguments may not both be used.')
+            kwargs['stdin'] = PIPE
+
+        if capture_output:
+            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:
+                raise ValueError('stdout and stderr arguments may not be used '
+                                 'with capture_output.')
+            kwargs['stdout'] = PIPE
+            kwargs['stderr'] = PIPE
+
+        with Popen(*popenargs, **kwargs) as process:
+            try:
+                stdout, stderr = process.communicate(input, timeout=timeout)
+            except TimeoutExpired as exc:
+                process.kill()
+                if _mswindows:
+                    # Windows accumulates the output in a single blocking
+                    # read() call run on child threads, with the timeout
+                    # being done in a join() on those threads.  communicate()
+                    # _after_ kill() is required to collect that and add it
+                    # to the exception.
+                    exc.stdout, exc.stderr = process.communicate()
+                else:
+                    # POSIX _communicate already populated the output so
+                    # far into the TimeoutExpired exception.
+                    process.wait()
+                raise
+            except:  # Including KeyboardInterrupt, communicate handled that.
+                process.kill()
+                # We don't call process.wait() as .__exit__ does that for us.
+                raise
+            retcode = process.poll()
+            if check and retcode:
+>               raise CalledProcessError(retcode, process.args,
+                                         output=stdout, stderr=stderr)
+E               subprocess.CalledProcessError: Command '['ninja', '-v', '-C', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100', '-f', '/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja']' returned non-zero exit status 1.
+
+/home/devuser/conda/envs/py312/lib/python3.12/subprocess.py:571: CalledProcessError
+
+The above exception was the direct cause of the following exception:
+
+num_tokens = 8, hidden_size = 1024, intermediate_size = 512
+moe_impl = <tests.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe object at 0x7e24d451af00>
+routing_config = {'compatible_activation_types': [<ActivationType.Swiglu: 3>, <ActivationType.Geglu: 4>], 'compatible_intermediate_size..._fused_moe.MxInt4BlockScaleMoe'>, <class 'tests.moe.test_trtllm_gen_fused_moe.BF16Moe'>], 'enable_autotune': True, ...}
+weight_processing = {'compatible_moe_impls': [<class 'tests.moe.test_trtllm_gen_fused_moe.FP4Moe'>, <class 'tests.moe.test_trtllm_gen_fuse...sts.moe.test_trtllm_gen_fused_moe.FP8BlockScaleMoe'>], 'layout': <WeightLayout.MajorK: 0>, 'use_shuffled_weight': True}
+activation_type = 3, cache_permute_indices = {}
+
+    @pytest.mark.parametrize("num_tokens", [8, 768, 3072])
+    @pytest.mark.parametrize("hidden_size", [1024])
+    @pytest.mark.parametrize("intermediate_size", [2944, 2048, 1024, 768, 512, 384])
+    @pytest.mark.parametrize(
+        "moe_impl",
+        [
+            pytest.param(FP8PerTensorMoe(), id="FP8_PerTensor"),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_DEEPSEEK),
+                id="FP8_Block_DeepSeek",
+            ),
+            pytest.param(
+                FP8BlockScaleMoe(fp8_quantization_type=QuantMode.FP8_BLOCK_SCALE_MXFP8),
+                id="FP8_Block_MxFp8",
+            ),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_NVFP4_NVFP4), id="NvFP4xNvFP4"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_MXFP8), id="MxFP4xMxFP8"),
+            pytest.param(FP4Moe(quant_mode=QuantMode.FP4_MXFP4_Bf16), id="MxFP4xBf16"),
+            pytest.param(MxInt4BlockScaleMoe(), id="MxInt4xBf16"),
+            pytest.param(BF16Moe(), id="Bf16xBf16"),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "routing_config",
+        [
+            pytest.param(
+                {
+                    "num_experts": 512,
+                    "top_k": 22,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP8PerTensorMoe, FP4Moe],
+                    "compatible_intermediate_size": [2944],
+                    "compatible_activation_types": [ActivationType.Relu2],
+                    "enable_autotune": True,
+                },
+                id="nemotron_3_dummy",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 384,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="kimi_k2",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 256,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 8,
+                    "top_k_groups": 4,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [
+                        FP4Moe,
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                    "compatible_intermediate_size": [512, 1024, 2048],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": True,
+                },
+                id="DSv3",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 72,
+                    "top_k": 6,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe],
+                    "compatible_intermediate_size": [384, 768],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="DSLite",
+            ),
+            pytest.param(
+                {
+                    "num_experts": 160,
+                    "top_k": 8,
+                    "padding": 8,
+                    "n_groups": 1,
+                    "top_k_groups": 1,
+                    "routed_scaling": 2.5,
+                    "has_routing_bias": True,
+                    "routing_method_type": RoutingMethodType.DeepSeekV3,
+                    "compatible_moe_impls": [FP4Moe, FP8BlockScaleMoe, BF16Moe],
+                    "compatible_intermediate_size": [512, 1024, 1536],
+                    "compatible_activation_types": [
+                        ActivationType.Swiglu,
+                        ActivationType.Geglu,
+                    ],
+                    "enable_autotune": False,
+                },
+                id="GLM4_MoE",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "weight_processing",
+        [
+            pytest.param(
+                {
+                    "use_shuffled_weight": False,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP8BlockScaleMoe],
+                },
+                id="NoShuffle_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.MajorK,
+                    "compatible_moe_impls": [FP4Moe, FP8PerTensorMoe, FP8BlockScaleMoe],
+                },
+                id="Shuffled_MajorK",
+            ),
+            pytest.param(
+                {
+                    "use_shuffled_weight": True,
+                    "layout": WeightLayout.BlockMajorK,
+                    "compatible_moe_impls": [
+                        FP8BlockScaleMoe,
+                        MxInt4BlockScaleMoe,
+                        BF16Moe,
+                    ],
+                },
+                id="Shuffled_BlockMajorK",
+            ),
+        ],
+    )
+    @pytest.mark.parametrize(
+        "activation_type",
+        [
+            pytest.param(ActivationType.Swiglu.value, id="Swiglu"),
+            pytest.param(ActivationType.Geglu.value, id="Geglu"),
+            pytest.param(ActivationType.Relu2.value, id="Relu2"),
+        ],
+    )
+    def test_deepseekv3_routing(
+        num_tokens,
+        hidden_size,
+        intermediate_size,
+        moe_impl,
+        routing_config,
+        weight_processing,
+        activation_type,
+        cache_permute_indices,
+    ):
+        """Test DeepSeekV3 routing configurations."""
+>       run_moe_test(
+            num_tokens,
+            hidden_size,
+            intermediate_size,
+            moe_impl,
+            routing_config,
+            weight_processing,
+            activation_type,
+            cache_permute_indices,
+        )
+
+tests/moe/test_trtllm_gen_fused_moe.py:3121:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests/moe/test_trtllm_gen_fused_moe.py:2744: in run_moe_test
+    output_dequant_actual = moe_impl.compute_production(
+tests/moe/test_trtllm_gen_fused_moe.py:290: in compute_production
+    return _compute_moe_actual_unified(self, args_dequant, args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/moe/test_trtllm_gen_fused_moe.py:2555: in _compute_moe_actual_unified
+    return moe_impl.call_moe(
+tests/moe/test_trtllm_gen_fused_moe.py:1132: in call_moe
+    output = trtllm_fp8_block_scale_moe(
+flashinfer/fused_moe/core.py:2470: in trtllm_fp8_block_scale_moe
+    result = get_trtllm_moe_sm100_module().trtllm_fp8_block_scale_moe(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/fused_moe/core.py:952: in get_trtllm_moe_sm100_module
+    moe_op = module.build_and_load()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+flashinfer/jit/core.py:317: in build_and_load
+    self.build(verbose, need_lock=False)
+flashinfer/jit/core.py:303: in build
+    run_ninja(self.build_dir, self.ninja_path, verbose)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+workdir = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100')
+ninja_file = PosixPath('/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/build.ninja')
+verbose = False
+
+    def run_ninja(workdir: Path, ninja_file: Path, verbose: bool) -> None:
+        workdir.mkdir(parents=True, exist_ok=True)
+        command = [
+            "ninja",
+            "-v",
+            "-C",
+            str(workdir.resolve()),
+            "-f",
+            str(ninja_file.resolve()),
+        ]
+        num_workers = _get_num_workers()
+        if num_workers is not None:
+            command += ["-j", str(num_workers)]
+
+        sys.stdout.flush()
+        sys.stderr.flush()
+        try:
+            subprocess.run(
+                command,
+                stdout=None if verbose else subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd=str(workdir.resolve()),
+                check=True,
+                text=True,
+            )
+        except subprocess.CalledProcessError as e:
+            msg = "Ninja build failed."
+            if e.output:
+                msg += " Ninja output:\n" + e.output
+>           raise RuntimeError(msg) from e
+E           RuntimeError: Ninja build failed. Ninja output:
+E           ninja: Entering directory `/home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100'
+E           [1/2] /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           FAILED: [code=1] /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /usr/local/cuda/bin/nvcc --generate-dependencies-with-compile --dependency-output /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o.d -DPy_LIMITED_API=0x03090000 -D_GLIBCXX_USE_CXX11_ABI=1 -I/home/devuser/.cache/flashinfer/cubins/456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12/include -I/workspaces/flashinfer/csrc/nv_internal -I/workspaces/flashinfer/csrc/nv_internal/include -isystem /home/devuser/conda/envs/py312/include/python3.12 -isystem /usr/local/cuda/include -isystem /usr/local/cuda/include/cccl -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/venv_cuda129/lib/python3.12/site-packages/tvm_ffi/include -isystem /workspaces/flashinfer/include -isystem /workspaces/flashinfer/csrc -isystem /workspaces/flashinfer/3rdparty/cutlass/include -isystem /workspaces/flashinfer/3rdparty/cutlass/tools/util/include -isystem /workspaces/flashinfer/3rdparty/spdlog/include --compiler-options=-fPIC --expt-relaxed-constexpr -static-global-template-stub=false -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -std=c++17 --threads=1 -use_fast_math -DFLASHINFER_ENABLE_F16 -DFLASHINFER_ENABLE_BF16 -DFLASHINFER_ENABLE_FP8_E4M3 -DFLASHINFER_ENABLE_FP8_E5M2 -DNDEBUG -O3 -DTLLM_GEN_EXPORT_INTERFACE -DTLLM_GEN_EXPORT_FLASHINFER -DTLLM_ENABLE_CUDA -DENABLE_BF16 -DENABLE_FP8 -DENABLE_FP4 -DTLLM_GEN_GEMM_CUBIN_PATH=\"456b1ae890d436c794b17e4435b41b849d3e5950/batched_gemm-2a674db-3a84a12\" -gencode=arch=compute_100a,code=sm_100a -DFLASHINFER_ENABLE_FP8_E8M0 -DFLASHINFER_ENABLE_FP4_E2M1 -c /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu -o /home/devuser/.cache/flashinfer/0.6.4/100a/cached_ops/fused_moe_trtllm_sm100/trtllm_fused_moe_kernel_launcher.cuda.o
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu: In function ‘int flashinfer::__tvm_ffi_trtllm_fp8_block_scale_moe(void*, const TVMFFIAny*, int32_t, TVMFFIAny*)’:
+E           /workspaces/flashinfer/csrc/trtllm_fused_moe_kernel_launcher.cu:2167:1233: error: default arguments are only permitted for function parameters [-fpermissive]
+E            2167 | TVM_FFI_DLL_EXPORT_TYPED_FUNC(trtllm_fp8_block_scale_moe, trtllm_fp8_block_scale_moe);
+E                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ^
+E           ninja: build stopped: subcommand failed.
+
+flashinfer/jit/cpp_ext.py:340: RuntimeError
+----------------------------- Captured stderr call -----------------------------
+2026-02-23 14:20:22,017 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+2026-02-23 14:20:26,167 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+=========================== short test summary info ============================
+FAILED tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-8]
+FAILED tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-768]
+FAILED tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-kimi_k2-FP8_Block_MxFp8-1024-1024-3072]
+FAILED tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-8]
+FAILED tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-768]
+FAILED tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-1024-1024-3072]
+FAILED tests/moe/test_trtllm_gen_fused_moe.py::test_deepseekv3_routing[Swiglu-Shuffled_MajorK-DSv3-FP8_Block_MxFp8-512-1024-8]
+========== 7 failed, 132 skipped, 6210 deselected in 77.10s (0:01:17) ==========
