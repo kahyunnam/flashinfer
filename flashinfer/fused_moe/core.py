@@ -1191,6 +1191,7 @@ def get_trtllm_moe_sm100_module():
                         [-1, -1] if tactic == -1 else tactic,
                         self.fp8_quantization_type,
                         self.activation_type,
+                        kwargs.get("routing_replay_out"),
                     )
                 else:
                     # FP8 per tensor scale
