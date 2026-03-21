@@ -789,20 +789,21 @@ def get_shuffle_block_size(epilogue_tile_m: int) -> int:
     return shuffle_block_size
 
 
+@functools.cache
 def get_shuffle_matrix_a_row_indices(
-    input_tensor: torch.Tensor, epilogue_tile_m: int
+    input_tensor_dim: int, input_tensor_shape: Tuple[int, ...], epilogue_tile_m: int
 ) -> torch.Tensor:
     """
     Higher-level PyTorch approach to reorder the rows in blocks of size 16 or 32.
     - We do NOT try to handle custom e2m1 memory usage (i.e. no 'K/2' bytes).
     - Instead, we purely reorder rows in a standard PyTorch shape [M, K].
     """
-    assert input_tensor.dim() == 2, (
-        f"input_tensor should be a 2D tensor, not {input_tensor.dim()}"
+    assert input_tensor_dim == 2, (
+        f"input_tensor should be a 2D tensor, not {input_tensor_dim}"
     )
 
     # M, K from the input
-    M, K = input_tensor.shape
+    M, K = input_tensor_shape
 
     # Choose block size 16 or 32
     shuffle_block_size = get_shuffle_block_size(epilogue_tile_m)
@@ -829,22 +830,23 @@ def get_shuffle_matrix_a_row_indices(
     return row_indices
 
 
+@functools.cache
 def get_shuffle_matrix_sf_a_row_indices(
-    input_tensor: torch.Tensor, epilogue_tile_m: int, num_elts_per_sf: int = 16
+    input_tensor_dtype: torch.dtype, input_tensor_dim: int, input_tensor_shape: Tuple[int, ...], epilogue_tile_m: int, num_elts_per_sf: int = 16
 ) -> torch.Tensor:
-    assert input_tensor.dtype == torch.uint8 or input_tensor.dtype == torch.bfloat16
+    assert input_tensor_dtype == torch.uint8 or input_tensor_dtype == torch.bfloat16
     assert num_elts_per_sf == 16 or num_elts_per_sf == 32
 
-    assert input_tensor.dim() == 2, (
-        f"input_tensor should be a 2D tensor, not {input_tensor.dim()}"
+    assert input_tensor_dim == 2, (
+        f"input_tensor should be a 2D tensor, not {input_tensor_dim}"
     )
 
     # M, K from the input
-    M, K = input_tensor.shape
+    M, K = input_tensor_shape
     assert M % 128 == 0
     assert K % 4 == 0
 
-    row_indices = get_shuffle_matrix_a_row_indices(input_tensor, epilogue_tile_m)
+    row_indices = get_shuffle_matrix_a_row_indices(input_tensor_dim, input_tensor_shape, epilogue_tile_m)
 
     return row_indices
 

@@ -244,11 +244,11 @@ def _maybe_get_cached_w3_w1_permute_indices(
             permute0 = torch.arange(dst_w3_w1_weight.shape[0], dtype=torch.long)
         if num_elts_per_sf is None:
             permute1 = get_shuffle_matrix_a_row_indices(
-                dst_w3_w1_weight, epilogue_tile_m=epilogue_tile_m
+                dst_w3_w1_weight.dim(), dst_w3_w1_weight.shape, epilogue_tile_m=epilogue_tile_m
             )
         else:
             permute1 = get_shuffle_matrix_sf_a_row_indices(
-                dst_w3_w1_weight,
+                dst_w3_w1_weight.dtype, dst_w3_w1_weight.dim(), dst_w3_w1_weight.shape,
                 epilogue_tile_m=epilogue_tile_m,
                 num_elts_per_sf=num_elts_per_sf,
             )
@@ -271,11 +271,11 @@ def get_w2_permute_indices_with_cache(
     if cache_key not in _cache_permute_indices:
         if num_elts_per_sf is None:
             permute_indices = get_shuffle_matrix_a_row_indices(
-                dst_w2_weight, epilogue_tile_m
+                dst_w2_weight.dim(), dst_w2_weight.shape, epilogue_tile_m
             ).to(dst_w2_weight.device)
         else:
             permute_indices = get_shuffle_matrix_sf_a_row_indices(
-                dst_w2_weight,
+                dst_w2_weight.dtype, dst_w2_weight.dim(), dst_w2_weight.shape,
                 epilogue_tile_m=epilogue_tile_m,
                 num_elts_per_sf=num_elts_per_sf,
             ).to(dst_w2_weight.device)

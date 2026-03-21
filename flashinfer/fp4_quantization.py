@@ -788,7 +788,7 @@ def shuffle_matrix_a(input_tensor: torch.Tensor, epilogue_tile_m: int) -> torch.
     """
     PyTorch equivalent of trtllm-gen `shuffleMatrixA`
     """
-    row_indices = get_shuffle_matrix_a_row_indices(input_tensor, epilogue_tile_m)
+    row_indices = get_shuffle_matrix_a_row_indices(input_tensor.dim(), input_tensor.shape, epilogue_tile_m)
 
     return input_tensor[row_indices.to(input_tensor.device)]
 
@@ -810,7 +810,7 @@ def shuffle_matrix_sf_a(
     This function doesn't add padding.
     """
 
-    row_indices = get_shuffle_matrix_sf_a_row_indices(input_tensor, epilogue_tile_m)
+    row_indices = get_shuffle_matrix_sf_a_row_indices(input_tensor.dtype, input_tensor.dim(), input_tensor.shape, epilogue_tile_m)
 
     w_shuffled = input_tensor[row_indices.to(input_tensor.device)]
 
