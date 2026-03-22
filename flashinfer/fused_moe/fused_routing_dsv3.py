@@ -47,9 +47,9 @@ def _check_dsv3_fused_routing_supported(
             raise ValueError(
                 f"routing_replay_out must be int16, got {routing_replay_out.dtype}"
             )
-        if routing_replay_out.shape != (num_tokens, topk):
+        if routing_replay_out.shape[0] < num_tokens or routing_replay_out.shape[1] != topk:
             raise ValueError(
-                f"routing_replay_out shape must be ({num_tokens}, {topk}), "
+                f"routing_replay_out shape[0] must be >= {num_tokens} and shape[1] must be {topk}, "
                 f"got {tuple(routing_replay_out.shape)}"
             )
 

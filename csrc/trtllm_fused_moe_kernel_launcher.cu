@@ -1919,7 +1919,7 @@ Array<Tensor> trtllm_fp8_block_scale_moe(
     TVM_FFI_ICHECK(replay.device().device_id == hidden_states.device().device_id)
         << "routing_replay_out must be on the same device as hidden_states";
     TVM_FFI_ICHECK(replay.ndim() == 2) << "routing_replay_out must be 2D [num_tokens, top_k]";
-    TVM_FFI_ICHECK(replay.size(0) == num_tokens) << "routing_replay_out dim0 must equal num_tokens";
+    // routing_replay_out dim0 check removed: buffer may be larger than num_tokens
     TVM_FFI_ICHECK(replay.size(1) == top_k) << "routing_replay_out dim1 must equal top_k";
     TVM_FFI_ICHECK(encode_dlpack_dtype(replay.dtype()) == int16_code)
         << "routing_replay_out must be int16 dtype";

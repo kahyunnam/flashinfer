@@ -359,7 +359,7 @@ void NoAuxTc(TensorView scores, TensorView bias, int64_t n_group, int64_t topk_g
         << "routing_replay_out must be on the same device as scores";
     TVM_FFI_ICHECK(replay.dim() == 2)
         << "routing_replay_out must be a 2D Tensor [num_tokens, topk]";
-    TVM_FFI_ICHECK(replay.sizes()[0] == num_tokens)
+    // routing_replay_out dim0 check removed: buffer may be larger than num_tokens
         << "routing_replay_out dim0 must equal num_tokens";
     TVM_FFI_ICHECK(replay.sizes()[1] == topk) << "routing_replay_out dim1 must equal topk";
     TVM_FFI_ICHECK(encode_dlpack_dtype(replay.dtype()) == int16_code)
