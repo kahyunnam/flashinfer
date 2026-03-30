@@ -1132,6 +1132,8 @@ def get_trtllm_moe_sm100_module():
                     kwargs["do_finalize"],
                     kwargs["enable_pdl"],
                     [-1, -1] if tactic == -1 else tactic,
+                    self.activation_type,
+                    kwargs.get("routing_replay_out"),
                 )
             elif (
                 self.dtype_act == DtypeTrtllmGen.E4m3
@@ -1339,6 +1341,8 @@ def get_trtllm_moe_sm100_module():
         do_finalize: bool = True,
         enable_pdl: Optional[bool] = None,
         tune_max_num_tokens: int = 8192,
+        activation_type: int = ActivationType.Swiglu.value,
+        routing_replay_out: Optional[torch.Tensor] = None,
     ) -> List[torch.Tensor]:
         assert routing_logits is not None or topk_ids is not None, (
             "either routing_logits or topk_ids must be provided"
@@ -1387,7 +1391,7 @@ def get_trtllm_moe_sm100_module():
             intermediate_size=intermediate_size,
             weight_layout=weight_layout,
             use_shuffled_weight=use_shuffled_weight,
-            activation_type=ActivationType.Swiglu,  # Default for BF16
+            activation_type=activation_type,
         )
 
         inputs = [output, routing_logits, topk_ids, expert_weights, hidden_states]
@@ -1411,6 +1415,8 @@ def get_trtllm_moe_sm100_module():
             weight_layout=weight_layout,
             do_finalize=do_finalize,
             enable_pdl=enable_pdl,
+            activation_type=activation_type,
+            routing_replay_out=routing_replay_out,
         )
 
         # Call the C++ function with the selected tactic
@@ -1437,6 +1443,8 @@ def get_trtllm_moe_sm100_module():
             do_finalize,
             enable_pdl,
             [-1, -1] if tactic == -1 else tactic,
+            activation_type,
+            routing_replay_out,
         )
         if do_finalize:
             return [output]
@@ -1469,6 +1477,8 @@ def get_trtllm_moe_sm100_module():
         do_finalize: bool = True,
         enable_pdl: Optional[bool] = None,
         tune_max_num_tokens: int = 8192,
+        activation_type: int = ActivationType.Swiglu.value,
+        routing_replay_out: Optional[torch.Tensor] = None,
     ) -> List[torch.Tensor]:
         seq_len = hidden_states.shape[0]
         hidden_size = hidden_states.shape[1]
@@ -2265,6 +2275,8 @@ def trtllm_bf16_moe(
     do_finalize: bool = True,
     enable_pdl: bool = True,
     tune_max_num_tokens: int = 8192,
+    activation_type: int = ActivationType.Swiglu.value,
+    routing_replay_out: Optional[torch.Tensor] = None,
 ) -> Union[List[torch.Tensor], torch.Tensor]:
     """BF16 MoE operation with autotuning support.
 
@@ -2302,6 +2314,9 @@ def trtllm_bf16_moe(
         do_finalize: Whether to finalize the output (default: True).
         enable_pdl: Whether to enable Programmatic Dependent Launch. Auto-enabled for >= sm90.
         tune_max_num_tokens: Maximum number of tokens for autotuning (default: 8192).
+        activation_type (int): Type of activation function (default: 3 - Swiglu)
+            - 3: Swiglu
+            - 6: Relu2
 
     Returns:
         when do_finalize=True, returns the final MoE output.
@@ -2329,6 +2344,8 @@ def trtllm_bf16_moe(
         do_finalize,
         enable_pdl,
         tune_max_num_tokens,
+        activation_type,
+        routing_replay_out,
     )
 
     if do_finalize:
@@ -2360,6 +2377,8 @@ def trtllm_bf16_routed_moe(
     do_finalize: bool = True,
     enable_pdl: bool = True,
     tune_max_num_tokens: int = 8192,
+    activation_type: int = ActivationType.Swiglu.value,
+    routing_replay_out: Optional[torch.Tensor] = None,
 ) -> List[torch.Tensor]:
     """BF16 MoE operation with autotuning support.
 
@@ -2396,6 +2415,9 @@ def trtllm_bf16_routed_moe(
         do_finalize: Whether to finalize the output (default: True).
         enable_pdl: Whether to enable Programmatic Dependent Launch. Auto-enabled for >= sm90.
         tune_max_num_tokens: Maximum number of tokens for autotuning (default: 8192).
+        activation_type (int): Type of activation function (default: 3 - Swiglu)
+            - 3: Swiglu
+            - 6: Relu2
 
     Returns:
         when do_finalize=True, returns the final MoE output.
@@ -2423,6 +2445,8 @@ def trtllm_bf16_routed_moe(
         do_finalize,
         enable_pdl,
         tune_max_num_tokens,
+        activation_type,
+        routing_replay_out,
     )
 
     if do_finalize:
