@@ -1943,6 +1943,17 @@ Array<Tensor> trtllm_fp8_block_scale_moe(
     flashinfer::nan_check::LaunchNanCheckFp8Bytes(
         hidden_states.data_ptr(), hidden_states.numel(),
         "trtllm_fp8_block_scale_moe:hidden_states[fp8]", stream);
+    if (quantization_type == Fp8QuantizationType::MxFp8) {
+      flashinfer::nan_check::LaunchNanCheckE8M0Scales(
+          hidden_states_scale.data_ptr(), hidden_states_scale.numel(),
+          "trtllm_fp8_block_scale_moe:hidden_states_scale[e8m0]", stream);
+      flashinfer::nan_check::LaunchNanCheckE8M0Scales(
+          gemm1_weights_scale.data_ptr(), gemm1_weights_scale.numel(),
+          "trtllm_fp8_block_scale_moe:gemm1_weights_scale[e8m0]", stream);
+      flashinfer::nan_check::LaunchNanCheckE8M0Scales(
+          gemm2_weights_scale.data_ptr(), gemm2_weights_scale.numel(),
+          "trtllm_fp8_block_scale_moe:gemm2_weights_scale[e8m0]", stream);
+    }
   }
 
   auto supported_tile_nums = Fp8BlockScaleLauncher::getSupportedTileNums(quantization_type);

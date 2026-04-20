@@ -83,6 +83,8 @@ void mxfp8_quantize(TensorView input, TensorView valMxFP8, TensorView scaleFP8SF
 
   flashinfer::nan_check::LaunchNanCheckFp8Bytes(valMxFP8.data_ptr(), valMxFP8.numel() * 1,
                                                 "mxfp8_quantize:output[fp8]", stream);
+  flashinfer::nan_check::LaunchNanCheckE8M0Scales(scaleFP8SF.data_ptr(), scaleFP8SF.numel(),
+                                                  "mxfp8_quantize:output_scale[e8m0]", stream);
 
 #undef LAUNCH_MXFP8_QUANTIZE_KERNEL
 }

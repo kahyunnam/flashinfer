@@ -383,6 +383,11 @@ class FusedMoeRunner : public tvm::ffi::ModuleObj {
       flashinfer::nan_check::LaunchNanCheckHalf(input.data_ptr(), input.numel(),
                                                 "cutlass_fused_moe:input[fp16]", stream);
     }
+    if (input_sf.has_value()) {
+      flashinfer::nan_check::LaunchNanCheckE8M0Scales(
+          input_sf.value().data_ptr(), input_sf.value().numel(),
+          "cutlass_fused_moe:input_sf[e8m0]", stream);
+    }
 
     WorkspaceInfo workspace_info = getWorkspaceInfo(
         num_rows, hidden_size, inter_size, num_experts_total, static_cast<int>(experts_per_token),
@@ -570,6 +575,11 @@ class FusedMoeRunner : public tvm::ffi::ModuleObj {
     } else if (mActivationDtype == dl_float16) {
       flashinfer::nan_check::LaunchNanCheckHalf(input.data_ptr(), input.numel(),
                                                 "cutlass_fused_moe_ml:input[fp16]", stream);
+    }
+    if (input_sf.has_value()) {
+      flashinfer::nan_check::LaunchNanCheckE8M0Scales(
+          input_sf.value().data_ptr(), input_sf.value().numel(),
+          "cutlass_fused_moe_ml:input_sf[e8m0]", stream);
     }
 
     CHECK_DIM(1, num_active_experts_per_node);

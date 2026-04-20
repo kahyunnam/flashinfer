@@ -30,6 +30,8 @@ void LaunchNanCheckBFloat16(const void* data, int64_t numel, const char* label,
                             cudaStream_t stream);
 void LaunchNanCheckFp8Bytes(const void* data, int64_t num_bytes, const char* label,
                             cudaStream_t stream);
+void LaunchNanCheckE8M0Scales(const void* data, int64_t num_bytes, const char* label,
+                              cudaStream_t stream);
 
 }  // namespace nan_check
 }  // namespace flashinfer

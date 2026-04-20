@@ -268,6 +268,10 @@ void mxfp8_bmm_impl(TensorView mat1, TensorView mat2, TensorView mat1Scale, Tens
                                                 "mxfp8_gemm:mat1[fp8]", stream);
   flashinfer::nan_check::LaunchNanCheckFp8Bytes(mat2.data_ptr(), mat2.numel(),
                                                 "mxfp8_gemm:mat2[fp8]", stream);
+  flashinfer::nan_check::LaunchNanCheckE8M0Scales(mat1Scale.data_ptr(), mat1Scale.numel(),
+                                                  "mxfp8_gemm:mat1Scale[e8m0]", stream);
+  flashinfer::nan_check::LaunchNanCheckE8M0Scales(mat2Scale.data_ptr(), mat2Scale.numel(),
+                                                  "mxfp8_gemm:mat2Scale[e8m0]", stream);
 
   switch (encode_dlpack_dtype(out.dtype())) {
     case float16_code:
