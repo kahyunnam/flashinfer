@@ -16,7 +16,6 @@
 #include <flashinfer/norm.cuh>
 #include <flashinfer/norm/fused_dit_layernorm.cuh>
 #include <flashinfer/norm/fused_qk_rmsnorm_rope.cuh>
-#include <flashinfer/norm/fused_qk_rmsnorm_rope.cuh>
 
 #include "tvm_ffi_utils.h"
 
