@@ -1445,13 +1445,6 @@ def testFusedQkRmsnormRope(args):
     run_refcheck = args.refcheck
     res = []
 
-    backends = filter_backends_by_compute_capability(
-        args.backends[:], args.routine, device
-    )
-    if len(backends) == 0:
-        print("[ERROR] No backends to test. Exiting.")
-        return res
-
     if num_heads is None:
         raise ValueError("--num_heads is required for fused_qk_rmsnorm_rope")
 
