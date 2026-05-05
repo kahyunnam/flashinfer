@@ -1428,6 +1428,12 @@ def testFusedQkRmsnormRope(args):
 
     device = get_device(args)
 
+    cc = torch.cuda.get_device_capability(device)
+    cc_int = cc[0] * 10 + cc[1]
+    if not fused_qk_rmsnorm_rope.is_compute_capability_supported(cc_int):
+        print(f"[SKIP] fused_qk_rmsnorm_rope not supported on SM{cc_int}")
+        return []
+
     batch_size = args.batch_size
     hidden_size = args.hidden_size
     num_heads = args.num_heads
