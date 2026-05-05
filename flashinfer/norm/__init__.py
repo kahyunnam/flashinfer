@@ -77,8 +77,8 @@ if not _USE_CUDA_NORM:
 def get_norm_module():
     """Get or compile the CUDA JIT norm module.
 
-    Defined unconditionally (outside if _USE_CUDA_NORM) because fused DIT
-    kernels only have a CUDA JIT implementation and no CuTe DSL alternative.
+    Defined unconditionally because fused DIT kernels only have a CUDA JIT
+    implementation and no CuTe DSL alternative.
     """
     return gen_norm_module().build_and_load()
 
@@ -1427,6 +1427,19 @@ def fused_dit_residual_layernorm_scale_shift(
 ####################################################################################################
 
 
+@functools.cache
+def _get_fused_qk_rmsnorm_rope_module():
+    """Compile the norm module for fused_qk_rmsnorm_rope.
+
+    Separate from get_norm_module() so this kernel can be used regardless
+    of _USE_CUDA_NORM (which gates CuTe DSL vs CUDA JIT for standard norms).
+    The underlying .so is the same norm module, but this accessor is always
+    available and only triggers compilation when fused_qk_rmsnorm_rope is
+    actually called.
+    """
+    return gen_norm_module().build_and_load()
+
+
 @supported_compute_capability([80, 86, 89, 90, 100, 103, 110, 120, 121])
 def _check_fused_qk_rmsnorm_rope(
     qkv,
@@ -1681,7 +1694,7 @@ def fused_qk_rmsnorm_rope(
     k_out_flat = k_out.view(num_tokens, -1)
     v_out_flat = v_out.view(num_tokens, -1)
 
-    get_norm_module().fused_qk_rmsnorm_rope(
+    _get_fused_qk_rmsnorm_rope_module().fused_qk_rmsnorm_rope(
         qkv_flat,
         q_weight,
         k_weight,
