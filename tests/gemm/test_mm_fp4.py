@@ -32,13 +32,13 @@ def _test_mm_fp4(
     if backend == "cute-dsl":
         if not use_128x4_sf_layout:
             pytest.skip("cute_dsl backend only supports 128x4 SF layout")
-        if compute_capability[0] not in [10, 12]:
-            pytest.skip("cute_dsl backend only supports SM100/SM103/SM120/SM121 GPUs.")
+        if compute_capability[0] not in [10]:
+            pytest.skip("cute_dsl backend only supports SM100/SM103 GPUs.")
     if backend == "b12x":
         if not use_128x4_sf_layout:
             pytest.skip("b12x backend only supports 128x4 SF layout")
-        if compute_capability[0] != 12 or compute_capability[1] != 0:
-            pytest.skip("b12x backend only supports SM120 GPUs.")
+        if compute_capability[0] != 12:
+            pytest.skip("b12x backend only supports SM120/SM121 GPUs.")
         if not use_nvfp4:
             pytest.skip("b12x backend only supports NVFP4 (sf_vec_size=16).")
         if torch.version.cuda and int(torch.version.cuda.split(".")[0]) < 13:
