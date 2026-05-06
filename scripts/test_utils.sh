@@ -165,6 +165,9 @@ install_and_verify() {
         # Install precompiled kernels if enabled
         install_precompiled_kernels
 
+        # Sync dependencies from the branch's requirements.txt
+        pip install -r requirements.txt
+
         # Install local python sources
         pip install -e . -v --no-deps
         echo ""
