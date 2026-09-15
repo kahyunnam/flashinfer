@@ -164,6 +164,100 @@ recurrent_kda_decode_trace = _recurrent_kda_template(
 )
 
 
+recurrent_kda_packed_prefill_trace = TraceTemplate(
+    op_type="kda",
+    name_prefix="recurrent_kda_packed_prefill",
+    description=(
+        "Packed multi-token recurrent Kimi Delta Attention prefill driven by a "
+        "prior plan. The sequence order and cumulative chunk prefix are "
+        "generated on device, which is what makes CUDA Graph capture possible. "
+        "Reached through flashinfer.RecurrentKDAPrefillWrapper.run; the "
+        "planned cu_seqlens, seq_order and workspace are held by the wrapper "
+        "rather than passed per call."
+    ),
+    axes={
+        "singleton": Const(description="Packed leading dimension.", abbrev="", value=1),
+        "total_tokens": Var(description="Tokens packed across all sequences."),
+        "num_heads": Const(
+            description="Number of query, key and value heads.", abbrev="h"
+        ),
+        "head_dim": Const(
+            description="Query, key, and value head dimension.", abbrev="d"
+        ),
+        "state_pool_size": Var(description="Number of writable state slots."),
+        "num_sequences": Var(description="Number of packed sequences."),
+        "num_checkpoints": Var(description="Number of packed prefill checkpoints."),
+        "num_checkpoint_offsets": Var(
+            description="Number of packed checkpoint cumulative offsets."
+        ),
+    },
+    inputs={
+        "q": Tensor(["singleton", "total_tokens", "num_heads", "head_dim"]),
+        "k": Tensor(["singleton", "total_tokens", "num_heads", "head_dim"]),
+        "v": Tensor(["singleton", "total_tokens", "num_heads", "head_dim"]),
+        "g": Tensor(["singleton", "total_tokens", "num_heads", "head_dim"]),
+        "beta": Tensor(["singleton", "total_tokens", "num_heads"]),
+        "A_log": Tensor(["num_heads"], optional=True),
+        "dt_bias": Tensor(["num_heads", "head_dim"], optional=True),
+        "scale": Scalar("float32", optional=True),
+        "initial_state": Tensor(
+            ["state_pool_size", "num_heads", "head_dim", "head_dim"],
+            optional=True,
+        ),
+        "output_final_state": Scalar("int32", optional=True),
+        "use_qk_l2norm_in_kernel": Scalar("int32", optional=True),
+        "use_gate_in_kernel": Scalar("int32", optional=True),
+        "lower_bound": Scalar("float32", optional=True),
+        "output": Tensor(
+            ["singleton", "total_tokens", "num_heads", "head_dim"],
+            optional=True,
+            description="Optional caller-owned output allocation.",
+        ),
+        "beta_is_logit": Scalar("int32", optional=True),
+        "state_checkpoints": Tensor(
+            ["num_checkpoints", "num_heads", "head_dim", "head_dim"],
+            optional=True,
+            description="Caller-owned packed KDA pre-block state output.",
+        ),
+        "checkpoint_cu_starts": Tensor(
+            ["num_checkpoint_offsets"],
+            optional=True,
+            description="Per-sequence cumulative packed checkpoint counts.",
+        ),
+        "checkpoint_every_n_tokens": Scalar("int32", optional=True),
+        "checkpoint_state_indices": Tensor(["num_sequences"], optional=True),
+        "ssm_state_indices": Tensor(
+            ["num_sequences"],
+            optional=True,
+            description="Writable state-pool slot selected for each sequence.",
+        ),
+    },
+    outputs={
+        "output": Tensor(
+            ["singleton", "total_tokens", "num_heads", "head_dim"],
+            dtype_from="q",
+        ),
+        "final_state": Tensor(
+            ["state_pool_size", "num_heads", "head_dim", "head_dim"],
+            dtype="bfloat16",
+            optional=True,
+        ),
+        "state_checkpoints": Tensor(
+            ["num_checkpoints", "num_heads", "head_dim", "head_dim"],
+            dtype="bfloat16",
+            optional=True,
+            param="state_checkpoints",
+        ),
+    },
+    constraints=[
+        "singleton == 1",
+        "head_dim == 128",
+        "num_checkpoint_offsets == num_sequences + 1",
+    ],
+    tags=["stage:prefill", "status:experimental"],
+)
+
+
 packed_kda_decode_trace = TraceTemplate(
     op_type="kda",
     name_prefix="packed_kda_decode",

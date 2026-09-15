@@ -33,7 +33,10 @@ from . import kda_prefill as _kda_prefill
 from . import kda_prefill_cute as _kda_prefill_cute
 from .jit import flash_kda_indexed as _flash_kda_indexed
 from .api_logging import flashinfer_api, flashinfer_experimental_api
-from .trace.templates.kda import recurrent_kda_trace
+from .trace.templates.kda import (
+    recurrent_kda_packed_prefill_trace,
+    recurrent_kda_trace,
+)
 from .utils import get_compute_capability
 
 
@@ -767,7 +770,10 @@ class RecurrentKDAPrefillWrapper:
 
         self._impl.plan(cu_seqlens, non_blocking=non_blocking)
 
-    @flashinfer_experimental_api(feature="recurrent KDA packed prefill wrapper")
+    @flashinfer_experimental_api(
+        trace=recurrent_kda_packed_prefill_trace,
+        feature="recurrent KDA packed prefill wrapper",
+    )
     def run(
         self,
         q: torch.Tensor,

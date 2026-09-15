@@ -29,6 +29,11 @@ import pytest
 import torch
 
 from flashinfer.kda import RecurrentKDAPrefillWrapper, recurrent_kda
+from flashinfer.trace.templates.kda import (
+    recurrent_kda_decode_trace,
+    recurrent_kda_packed_prefill_trace,
+    recurrent_kda_trace,
+)
 from flashinfer.utils import get_compute_capability
 
 from tests.test_helpers.kda_prefill import (
@@ -75,6 +80,34 @@ def test_prefill_wrapper_is_marked_experimental():
     for method in (RecurrentKDAPrefillWrapper.plan, RecurrentKDAPrefillWrapper.run):
         assert method.is_experimental
         assert "experimental" in method.__doc__
+
+
+def test_prefill_wrapper_traces_run_under_its_own_name_cpu():
+    """``run`` is traceable while the wrapper is still experimental (#5069).
+
+    Tracing ``run`` and not ``plan`` follows the stable plan-and-run wrappers.
+    The ``status:experimental`` tag is what graduation has to flip, so it is
+    asserted here rather than left to the reviewer to notice.
+    """
+
+    template = recurrent_kda_packed_prefill_trace
+    assert template.name_prefix == "recurrent_kda_packed_prefill"
+    assert "stage:prefill" in template.tags
+    assert "status:experimental" in template.tags
+    assert hasattr(RecurrentKDAPrefillWrapper.run, "fi_trace")
+    assert not hasattr(RecurrentKDAPrefillWrapper.plan, "fi_trace")
+
+    # A name of its own: the collision #4936 removed must not come back here.
+    assert template.name_prefix not in {
+        recurrent_kda_trace.name_prefix,
+        recurrent_kda_decode_trace.name_prefix,
+    }
+
+    # Adding an argument to run without describing it must fail here.
+    described = set(template.inputs)
+    accepted = set(inspect.signature(RecurrentKDAPrefillWrapper.run).parameters)
+    assert described <= accepted - {"self"}
+    assert accepted - {"self"} - described == set()
 
 
 def test_prefill_wrapper_plan_builds_stable_device_metadata(cuda_device, monkeypatch):
