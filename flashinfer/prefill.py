@@ -6340,7 +6340,12 @@ class BatchPrefillWithRaggedKVCacheWrapper:
                 # take the first backend whose kernel serves this problem
                 # exactly; none eligible -> stay on FA2. Explicit backends are
                 # never rewritten.
-                elif self._backend == "fa2":
+                elif (
+                    self._backend == "fa2"
+                    # fa2's batch-invariance controls have no cuDNN/CUTLASS equivalent.
+                    and fixed_split_size == -1
+                    and not disable_split_kv
+                ):
                     upgraded = _blackwell_ragged_auto_upgrade(
                         self.device,
                         self._kv_layout,
