@@ -2674,26 +2674,44 @@ def test_nvfp4_quantize_pdl_waits_for_global_scale(dtype, shape):
     torch.testing.assert_close(fp4, expected_fp4, rtol=0, atol=0)
 
 
-
 @pytest.mark.parametrize(
     "quantize",
     [
-        lambda x, gs: fp4_quantize(x, gs),
-        lambda x, gs: fp4_quantize(x, gs, backend="cute-dsl"),
-        lambda x, gs: fp4_quantize(x, None, 32, True),
-        lambda x, gs: nvfp4_quantize(x, gs),
-        lambda x, gs: nvfp4_quantize(x, gs, backend="cute-dsl"),
-        lambda x, gs: nvfp4_quantize(x, gs, per_token_activation=True),
-        lambda x, gs: mxfp4_quantize(x),
-        lambda x, gs: mxfp4_quantize(x, backend="cute-dsl"),
+        pytest.param(lambda x, gs: fp4_quantize(x, gs), id="fp4-cuda"),
+        pytest.param(
+            lambda x, gs: fp4_quantize(x, gs, backend="cute-dsl"), id="fp4-cute-dsl"
+        ),
+        pytest.param(lambda x, gs: fp4_quantize(x, None, 32, True), id="fp4-mx-cuda"),
+        pytest.param(lambda x, gs: nvfp4_quantize(x, gs), id="nvfp4-cuda"),
+        pytest.param(
+            lambda x, gs: nvfp4_quantize(x, gs, backend="cute-dsl"),
+            id="nvfp4-cute-dsl",
+        ),
+        pytest.param(
+            lambda x, gs: nvfp4_quantize(x, gs, per_token_activation=True),
+            id="nvfp4-per-token-cuda",
+        ),
+        pytest.param(
+            lambda x, gs: nvfp4_quantize(
+                x, 1.0 / (448 * 6), per_token_activation=True, backend="cute-dsl"
+            ),
+            id="nvfp4-per-token-cute-dsl",
+        ),
+        pytest.param(lambda x, gs: mxfp4_quantize(x), id="mxfp4-cuda"),
+        pytest.param(
+            lambda x, gs: mxfp4_quantize(x, backend="cute-dsl"), id="mxfp4-cute-dsl"
+        ),
     ],
 )
-def test_fp4_quantize_rejects_pre_sm100(quantize):
-    if torch.cuda.get_device_capability()[0] >= 10:
-        pytest.skip("needs a pre-SM100 GPU")
+def test_fp4_quantize_rejects_pre_sm100(quantize, request, monkeypatch):
+    if "cute-dsl" in request.node.callspec.id and not _is_cute_dsl_available():
+        pytest.skip("CuTe-DSL is not available")
+    import flashinfer.quantization.fp4_quantization as fp4_mod
+
+    monkeypatch.setattr(fp4_mod, "get_compute_capability", lambda device: (9, 0))
     x = torch.randn(128, 64, dtype=torch.bfloat16, device="cuda")
     gs = torch.tensor([1.0], device="cuda")
-    with pytest.raises(ValueError, match="requires SM100 or newer"):
+    with pytest.raises(ValueError, match="requires SM100 or newer, got SM90"):
         quantize(x, gs)
 
 

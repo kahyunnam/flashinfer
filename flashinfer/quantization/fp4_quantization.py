@@ -1100,8 +1100,8 @@ def fp4_quantize(
     backend : str
         Backend to use for quantization:
 
-        - ``"cuda"``: stable CUDA kernel (default).
-        - ``"cute-dsl"``: CuTe-DSL kernel (SM100+, **experimental**).
+        - ``"cuda"``: stable CUDA kernel (default), SM100 and newer.
+        - ``"cute-dsl"``: CuTe-DSL kernel (SM100 and newer, **experimental**).
           Supported combinations:
 
           * ``sf_vec_size=16, sf_use_ue8m0=False``: all layouts,
@@ -1131,11 +1131,13 @@ def fp4_quantize(
         when BFloat16 is not enabled, FP8 input when FP8 is not enabled,
         or ``sf_vec_size`` other than 16 or 32).
     ValueError
-        If the ``"cute-dsl"`` backend is requested for an unsupported
-        parameter combination, or if an explicit ``nvfp4_4over6`` recipe is
-        combined with MXFP4 parameters (``sf_vec_size=32`` /
-        ``sf_use_ue8m0=True``) or with fp8 input, none of which has a
-        4over6 candidate search.
+        If ``input`` is on a GPU older than SM100 (compute capability below
+        10.0): neither backend has a kernel for SM90 and earlier, and the
+        check runs before any kernel is compiled or launched. Also if the
+        ``"cute-dsl"`` backend is requested for an unsupported parameter
+        combination, or if an explicit ``nvfp4_4over6`` recipe is combined
+        with MXFP4 parameters (``sf_vec_size=32`` / ``sf_use_ue8m0=True``)
+        or with fp8 input, none of which has a 4over6 candidate search.
 
     Warnings
     --------
@@ -1617,8 +1619,8 @@ def nvfp4_quantize(
     backend : str
         Backend to use for quantization:
 
-        - ``"cuda"``: stable CUDA kernel (default).
-        - ``"cute-dsl"``: CuTe-DSL kernel (SM100+, **experimental**);
+        - ``"cuda"``: stable CUDA kernel (default), SM100 and newer.
+        - ``"cute-dsl"``: CuTe-DSL kernel (SM100 and newer, **experimental**);
           supports all ``sfLayout`` values
           (``layout_128x4`` / ``layout_8x4`` / ``layout_linear``)
           and input dtypes fp16/bf16/float8_e4m3fn, but only
@@ -1647,6 +1649,14 @@ def nvfp4_quantize(
         - ``None``: 4over6 off. The environment is ignored.
         - :class:`NVFP44Over6Config`: on with exactly that recipe. The
           environment is ignored.
+
+    Raises
+    ------
+    ValueError
+        If ``a`` is on a GPU older than SM100 (compute capability below
+        10.0), for every backend and for both the global-scale and the
+        per-token paths. The check runs before any kernel is compiled or
+        launched.
 
     Returns
     -------
@@ -1727,6 +1737,7 @@ def nvfp4_quantize(
                     "CuTe-DSL backend requested but CuTe-DSL is not available. "
                     "Please install the required dependencies."
                 )
+            _require_sm100_fp4_quantize(a.device, "nvfp4_quantize")
             from .kernels.nvfp4_quantize import (
                 SF_LAYOUT_128x4,
                 SF_LAYOUT_8x4,
@@ -1902,8 +1913,8 @@ def mxfp4_quantize(
     backend : str
         Backend to use for quantization:
 
-        - ``"cuda"``: stable CUDA kernel (default).
-        - ``"cute-dsl"``: CuTe-DSL kernel (SM100+, **experimental**).
+        - ``"cuda"``: stable CUDA kernel (default), SM100 and newer.
+        - ``"cute-dsl"``: CuTe-DSL kernel (SM100 and newer, **experimental**).
     enable_pdl : bool, optional
         Whether to enable Programmatic Dependent Launch.  Only used when
         ``backend == "cute-dsl"``.  Auto-detected from device capability
@@ -1912,6 +1923,13 @@ def mxfp4_quantize(
         Scale-factor layout.  Defaults to ``SfLayout.layout_128x4``.
         Supported layouts are ``layout_128x4``, ``layout_8x4``, and
         ``layout_linear``.
+
+    Raises
+    ------
+    ValueError
+        If ``a`` is on a GPU older than SM100 (compute capability below
+        10.0). Neither backend has a kernel for SM90 and earlier; the check
+        runs before any kernel is compiled or launched.
 
     Returns
     -------
